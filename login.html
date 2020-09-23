@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_LogIn.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    <link rel="icon" href="Pictures/Logo2 - Copy.png" type="image/icon type">
+    <script type="text/javascript" src="script_LogIn.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>ŠUMADIJSKA TEGLICA | Prijava</title>
+</head>
+
+<body>
+
+    <a href="index.html"><i class="fa fa-arrow-left"></i></a>
+    
+
+    <div class="wrapper">
+
+        <div class="title" id="title">
+            Forma za prijavu
+        </div>
+
+        <div class="" id="error"></div>
+
+
+        <form class="form" name="myForm1" id="form1">
+
+            <div class="input_field">
+                <label for="email">Email</label>
+                <input type="email" class="input" name="email" id="email">
+                <i class="fas fa-check-circle" id="successEmail"></i>
+                <i class="fas fa-exclamation-circle" id="errorEmail"></i>
+            </div>
+
+            <div class="input_field">
+                <label for="password">Lozinka</label>
+                <input type="password" class="input" name="password" id="password">
+                <i class="fas fa-check-circle" id="successPassword"></i>
+                <i class="fas fa-exclamation-circle" id="errorPassword"></i>
+            </div>
+
+            <div class="input_field">
+                <input type="submit" value="Prijavi se" class="btn" id="submit" name="submit" onclick="validationLogIn();">
+            </div>
+
+            <div class=" input_field loz ">
+                <a href="#" onclick="forgotPsw()">Zaboravili ste lozinku?</a></p>
+            </div>
+            <br>
+
+            <div class=" input_field log ">
+                <p>Nemate kreiran nalog? <a href="registracija.html ">Registracija</a></p>
+            </div>
+
+        </form>
+
+
+
+
+        <form class="form" name="myForm2" id="form2">
+
+            <br>
+            <div class="input_field">
+                <label>Email</label>
+                <input type="email" class="input" id="emailReset">
+                <i class="fas fa-check-circle" id="successEmail"></i>
+                <i class="fas fa-exclamation-circle" id="errorEmail"></i>
+            </div>
+
+            <br>
+
+            <div class="input_field">
+                <input type="submit" value="Resetuj lozinku" class="btn" id="buttonReset">
+            </div>
+
+            <div class=" input_field log ">
+                <p>Vrati se nazad? <a href="#" onclick="loginBack()">Prijava</a></p>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
